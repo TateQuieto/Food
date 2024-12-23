@@ -1,0 +1,148 @@
+/* VARIABLES CSS */
+:root {
+    /* COLORS*/
+    --color_primario_a: #aa0404;
+    --color_secundario_a: #5e0606;
+    --color_primario_b: #1d8754;
+    --color_secundario_b: #155b3a;
+    --color_white_100: #ffffff;
+    --color_white_80: #ffffffea;
+    --color_white_60: #ffffffba;  
+
+    /* ----------- HEADER   ---------------*/
+    --r_boton: 1vw;
+    --w_header_container: 98.5vw;
+    --h_header_container: 10vh;
+    --r_header: calc(var(--r_boton)*1.5) calc(var(--r_boton)*1.5) var(--r_boton) var(--r_boton);
+    --c_header_background: var(--color_white_80);
+    --b_header_border:2px;
+    --b_header:var(--b_header_border) solid var(--color_primario_a);
+    /* HEADER BOTTON ----------------------*/
+    --w_boton: 15vw;
+    --h_boton: 5vw;
+    
+    --space1: 1vw;
+    /* FIN HEADER -------------------------*/ 
+
+    /* FOOTER *******************************************************************************/
+    --margin_footer: 2px;
+    --radius_footer: 20px 40px 20px 20px; 
+
+    /* CENTRAL BODY *****************************************************************************/
+    --w_container_lateral: 5vw;
+}
+
+
+
+/* RESETEO Y ESTRUCTURA GENERAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    
+}
+
+
+.header {
+    position: fixed;
+    display: flex;
+    z-index: 1000; 
+    width: var(--w_header_container);
+    height: var(--h_header_container);
+    align-items: center;
+    background-color: var(--c_header_background);
+    border-radius: var(--r_header);
+    border:var(--b_header);
+}
+
+footer {
+    margin: var(--margin_footer);
+    background-image: url('imagenes/fondo.png');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius:var(--radius_footer);
+}
+
+
+/************************************** BOTONES ******************************************************/
+@keyframes animation_boton {
+    0%, 100%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+.bonton_logo {
+    width: cal(100vw - (var(3*--w_boton) + var(--space1)));
+    height: var(--h_boton);
+}
+
+.boton_left, .boton_rigth, .boton_center {
+    text-align: center;
+    width: var(--w_boton);
+    height: var(--h_boton);
+    color: var(--color_white_100); /* Asegura que el texto sea visible */
+    cursor: pointer; /* Cambia el puntero al pasar por el botón */
+
+}
+.boton_left, .boton_rigth {
+    background-color: var(--color_primario_a);
+}
+.boton_center{
+    background-color: var(--color_primario_b);
+    border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
+    animation: animation_boton 1s ease-in-out infinite;
+}
+.boton_left{
+    border-radius: var(--r_boton) 0 0 var(--r_boton);
+}
+.boton_rigth {
+    border-radius: 0 var(--r_boton) var(--r_boton) 0;
+}
+.boton_left:hover, .boton_rigth:hover {
+    background-color: var(--color_secundario_a);
+    transform: scale(1.1);
+}
+.boton_center:hover{
+background-color: var(--color_secundario_b);
+}
+.space1{
+    width: var(--space1);
+}
+
+/* PRIMERA PANTALLA ********************************************************************/
+
+.central_first_screem {
+    border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
+    border: 2px solid var(--color_primario_a);
+    width: calc(100vw - (var(--w_container_lateral)*2 ));
+    background-color: var(--color_white_60);
+    height: calc(100vh - var(--h_header_container));
+}
+
+.lateral_screem {
+    border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
+    border: 2px solid var(--color_primario_a);
+    width: var(--w_container_lateral);
+    background-color:var(--color_white_80);
+    height: auto;
+    text-align: center;
+}
+
+.final_screem_left, .final_screem_rigth {
+    height: 30vh;
+    border: 2px solid var(--color_primario_a);
+    width: 50%;
+   
+}
+.final_screem_left{
+    border-radius:var(--r_boton) 0  0 calc(var(--r_boton)*3);
+    background-color: var(--color_white_60);
+}
+
+.final_screem_rigth {
+    border-radius: 0 var(--r_boton)  var(--r_boton) 0;
+    background-color: var(--color_primario_a);
+}

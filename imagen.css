@@ -1,0 +1,29 @@
+/* TEXTO DE LOS BOTONES */
+
+/* IMÁGENES */
+.imagen_header {
+    position: absolute;
+    height: 20vh; /* Define una altura específica para el contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.imagen_humo {
+    height:var(--h_header_container); /* Define una altura fija o relativa */
+    width: auto; /* Mantiene las proporciones automáticamente */
+    position: absolute; /* No necesita ser absoluto en este caso */
+    padding-left: 20vh;
+   margin-top: -5;
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+}
+
+.imagen_tatequieto {
+    position: absolute;
+    height: 12vh;
+    padding-left: 15vh;
+    margin-top: -2%;
+    object-fit: contain;
+}
+
+.imagen_laterales {
+    position: relative;
+}
