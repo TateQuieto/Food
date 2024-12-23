@@ -11,16 +11,16 @@
     height:var(--h_header_container); /* Define una altura fija o relativa */
     width: auto; /* Mantiene las proporciones automáticamente */
     position: absolute; /* No necesita ser absoluto en este caso */
-    padding-left: 20vh;
-   margin-top: -5;
+    padding-left: 24vh;
+   margin-top: -5vh;
     object-fit: contain; /* Ajusta la imagen sin recortarla */
 }
 
 .imagen_tatequieto {
     position: absolute;
-    height: 12vh;
-    padding-left: 15vh;
-    margin-top: -2%;
+    height: 7vh;
+    padding-left: 17vh;
+    margin-top: -2vh;
     object-fit: contain;
 }
 

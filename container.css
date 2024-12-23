@@ -19,7 +19,7 @@
     --b_header:var(--b_header_border) solid var(--color_primario_a);
     /* HEADER BOTTON ----------------------*/
     --w_boton: 15vw;
-    --h_boton: 5vw;
+    --h_boton: 3vw;
     
     --space1: 1vw;
     /* FIN HEADER -------------------------*/ 
