@@ -37,7 +37,7 @@
     position: relative;
 }
 
-.facebook, .instagram, .whatsapp, .email {
+.facebook, .instagram, .whatsapp, .email, .tiktok {
       height: 25px;
   }
 
@@ -52,4 +52,7 @@
   }
   .email:hover {
     content: url('imagenes/email2.svg');
+  }
+  .tiktok:hover {
+    content: url('imagenes/tiktok2.svg');
   }

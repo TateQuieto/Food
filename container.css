@@ -21,10 +21,11 @@
     --b_header_border:0px;
     --b_header:var(--b_header_border);
     /* HEADER BOTTON ----------------------*/
-    --w_boton: 15vw;
+    --w_boton: 10vw;
     --h_boton: 3vw;
     
-    --space1: 1vw;
+    --space1: 6vw;
+    --space2: 2vw;
     /* FIN HEADER -------------------------*/ 
 
     /* FOOTER *******************************************************************************/
@@ -76,7 +77,7 @@ footer {
     background-color: var(--color_white_80);
     border: 2px solid var(--color_primario_a);
     border-radius: var(--r_boton);
-
+    align-items: center ;
 }
 
 /************************************** BOTONES ******************************************************/
@@ -89,11 +90,11 @@ footer {
     }
 }
 .bonton_logo {
-    width: cal(100vw - (var(3*--w_boton) + var(--space1)));
+    width: cal(100vw - (var(4*--w_boton) + var(--space1) + var(--space2)));
     height: var(--h_boton);
 }
 
-.boton_left, .boton_rigth, .boton_center {
+.boton_left, .boton_rigth, .boton_center, .boton_center1 {
     text-align: center;
     width: var(--w_boton);
     height: var(--h_boton);
@@ -101,9 +102,10 @@ footer {
     cursor: pointer; /* Cambia el puntero al pasar por el botón */
 
 }
-.boton_left, .boton_rigth {
+.boton_left, .boton_rigth, .boton_center1 {
     background-color: var(--color_primario_a);
 }
+
 .boton_center{
     background-color: var(--color_primario_b);
     border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
@@ -115,7 +117,8 @@ footer {
 .boton_rigth {
     border-radius: 0 var(--r_boton) var(--r_boton) 0;
 }
-.boton_left:hover, .boton_rigth:hover {
+
+.boton_left:hover, .boton_rigth:hover, .boton_center1:hover {
     background-color: var(--color_secundario_a);
     transform: scale(1.1);
 }
@@ -125,6 +128,10 @@ background-color: var(--color_secundario_b);
 .space1{
     width: var(--space1);
 }
+.space2{
+    width: var(--space2);
+}
+
 
 /* PRIMERA PANTALLA ********************************************************************/
 
@@ -234,4 +241,27 @@ input:valid, textarea:valid {
     input, textarea {
         font-size: 16px;
     }
+}
+
+
+.container_email {
+    width: 80vh;
+    height: 30vh;
+    background-color: var(--color_white_80);
+    display: flex; /* Activar Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: absolute; /* Posición absoluta para centrar en pantalla */
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Ajuste exacto al centro */
+    border-radius: var(--r_boton); /* Bordes redondeados opcionales */
+    border: 2px solid var(--color_primario_a);
+}
+
+td a1 img {
+    margin: 0 20px; /* Añade un margen horizontal de 15px entre los iconos */
+    width: 40px; /* Ajusta el tamaño de los iconos si es necesario */
+    height: auto;
+    display: inline-block; /* Asegura que se mantengan en la misma fila */
 }
