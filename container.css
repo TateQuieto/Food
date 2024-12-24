@@ -5,18 +5,20 @@
     --color_secundario_a: #5e0606;
     --color_primario_b: #1d8754;
     --color_secundario_b: #155b3a;
+
     --color_white_100: #ffffff;
-    --color_white_80: #ffffffea;
-    --color_white_60: #ffffffba;  
+    --color_white_60:rgba(255, 255, 255, 0.496);
+    --color_white_80: #ffffffdd;  
+    --color_white_0: #ffffff00;
 
     /* ----------- HEADER   ---------------*/
     --r_boton: 1vw;
     --w_header_container: 98.5vw;
     --h_header_container: 10vh;
-    --r_header: calc(var(--r_boton)*1.5) calc(var(--r_boton)*1.5) var(--r_boton) var(--r_boton);
-    --c_header_background: var(--color_white_80);
-    --b_header_border:2px;
-    --b_header:var(--b_header_border) solid var(--color_primario_a);
+    --r_header: 0 0 0 0;
+    --c_header_background: var(--color_white_0);
+    --b_header_border:0px;
+    --b_header:var(--b_header_border);
     /* HEADER BOTTON ----------------------*/
     --w_boton: 15vw;
     --h_boton: 3vw;
@@ -53,6 +55,10 @@ html, body {
     background-color: var(--c_header_background);
     border-radius: var(--r_header);
     border:var(--b_header);
+}
+
+.header.scrolled {
+    background-color:var(--color_white_80); /* Color de fondo cuando se desplaza */
 }
 
 footer {

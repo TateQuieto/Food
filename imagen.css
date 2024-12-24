@@ -6,6 +6,10 @@
     height: 20vh; /* Define una altura específica para el contenedor */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
+.imagen_header.scale {
+    position: absolute;
+    height: 130vh;
+}
 
 .imagen_humo {
     height:var(--h_header_container); /* Define una altura fija o relativa */
@@ -27,3 +31,18 @@
 .imagen_laterales {
     position: relative;
 }
+
+.facebook, .instagram, .whatsapp {
+    transition: all 0.3s ease; /* Suaviza la transición */
+    height: 25px;
+  }
+
+.facebook:hover {
+    content: url('imagenes/facebook2.svg');
+  }
+  .instagram:hover {
+    content: url('imagenes/instagram2.svg');
+  }
+   .whatsapp:hover {
+    content: url('imagenes/WHATSAPP2.svg');
+  }

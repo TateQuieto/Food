@@ -23,4 +23,14 @@
         console.error("El elemento con id 'humo' no fue encontrado en el DOM.");
     }
     
+    const header = document.getElementById("header");
+    const logo  =document.getElementById("imagen_header");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 0) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
     
