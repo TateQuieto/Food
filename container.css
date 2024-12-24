@@ -4,7 +4,8 @@
     --color_primario_a: #aa0404;
     --color_secundario_a: #5e0606;
     --color_primario_b: #1d8754;
-    --color_secundario_b: #155b3a;
+    --color_secundario_b: #45a049;
+    --color_email:#4e4e4ea9;
 
     --color_white_100: #ffffff;
     --color_white_60:rgba(255, 255, 255, 0.496);
@@ -70,6 +71,13 @@ footer {
     border-radius:var(--radius_footer);
 }
 
+.send_to_email {
+    height: 60vh;
+    background-color: var(--color_white_80);
+    border: 2px solid var(--color_primario_a);
+    border-radius: var(--r_boton);
+
+}
 
 /************************************** BOTONES ******************************************************/
 @keyframes animation_boton {
@@ -151,4 +159,79 @@ background-color: var(--color_secundario_b);
 .final_screem_rigth {
     border-radius: 0 var(--r_boton)  var(--r_boton) 0;
     background-color: var(--color_primario_a);
+}
+
+
+
+html {
+    scroll-behavior:smooth ;
+}
+
+/* enviar mensajes*/
+/* Estilos generales para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 8px;
+/*    background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color:var(--color_secundario_a);
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color_secundario_b);
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--color_secundario_b); /* Color verde en foco */
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color:var(--color_primario_b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color:var(--color_secundario_b); /* Color verde más oscuro al pasar el cursor */
+}
+
+input:invalid, textarea:invalid {
+    border-color:var(--color_primario_a);
+}
+
+input:valid, textarea:valid {
+    border-color: var(--color_primario_b);
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
 }

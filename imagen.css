@@ -38,8 +38,7 @@
 }
 
 .facebook, .instagram, .whatsapp, .email {
-    transition: all 0.3s ease; /* Suaviza la transición */
-    height: 25px;
+      height: 25px;
   }
 
 .facebook:hover {
