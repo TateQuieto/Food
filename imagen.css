@@ -39,6 +39,8 @@
 
 .facebook, .instagram, .whatsapp, .email, .tiktok {
       height: 25px;
+      padding-left: 40px;
+      padding-right: 40px;
   }
 
 .facebook:hover {

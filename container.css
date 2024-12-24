@@ -259,9 +259,3 @@ input:valid, textarea:valid {
     border: 2px solid var(--color_primario_a);
 }
 
-td a1 img {
-    margin: 0 20px; /* Añade un margen horizontal de 15px entre los iconos */
-    width: 40px; /* Ajusta el tamaño de los iconos si es necesario */
-    height: auto;
-    display: inline-block; /* Asegura que se mantengan en la misma fila */
-}
