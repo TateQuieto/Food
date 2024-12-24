@@ -32,7 +32,7 @@
     position: relative;
 }
 
-.facebook, .instagram, .whatsapp {
+.facebook, .instagram, .whatsapp, .email {
     transition: all 0.3s ease; /* Suaviza la transición */
     height: 25px;
   }
@@ -45,4 +45,7 @@
   }
    .whatsapp:hover {
     content: url('imagenes/WHATSAPP2.svg');
+  }
+  .email:hover {
+    content: url('imagenes/email2.svg');
   }
