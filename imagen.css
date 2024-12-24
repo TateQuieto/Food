@@ -6,10 +6,7 @@
     height: 20vh; /* Define una altura específica para el contenedor */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
-.imagen_header.scale {
-    position: absolute;
-    height: 130vh;
-}
+
 
 .imagen_humo {
     height:var(--h_header_container); /* Define una altura fija o relativa */
@@ -25,6 +22,14 @@
     height: 7vh;
     padding-left: 17vh;
     margin-top: -2vh;
+    object-fit: contain;
+}
+
+.picante {
+    position: absolute;
+    height: 25vh;
+    padding-left: 17vh;
+    margin-top: -13vh;
     object-fit: contain;
 }
 

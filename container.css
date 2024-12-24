@@ -145,7 +145,7 @@ background-color: var(--color_secundario_b);
 }
 .final_screem_left{
     border-radius:var(--r_boton) 0  0 calc(var(--r_boton)*3);
-    background-color: var(--color_white_60);
+    background-color: var(--color_white_80);
 }
 
 .final_screem_rigth {
