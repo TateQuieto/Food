@@ -58,14 +58,6 @@ html, body {
     border:var(--b_header);
 }
 
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Cambia la dirección del contenido */
-        width: 100%; /* Se ajusta al ancho de la pantalla */
-        height: auto; /* Ajusta la altura automáticamente */
-        padding: 15px; /* Espaciado más cómodo */
-    }
-}
 
 .header.scrolled {
     background-color:var(--color_white_80); /* Color de fondo cuando se desplaza */
@@ -309,6 +301,13 @@ h1 {
     position: absolute;
     height: 20vh; /* Define una altura específica para el contenedor */
     width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+@media screen and (max-width: 768px) {
+    .imagen_header {
+        margin-left: -15%;
+    }
+    
 }
 
 
