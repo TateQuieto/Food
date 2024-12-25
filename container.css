@@ -13,7 +13,7 @@
     --color_white_0: #ffffff00;
 
     /* ----------- HEADER   ---------------*/
-    --r_boton: 1vw;
+    --r_btn: 1vw;
     --w_header_container: 98.5vw;
     --h_header_container: 10vh;
     --r_header: 0 0 0 0;
@@ -21,8 +21,8 @@
     --b_header_border:0px;
     --b_header:var(--b_header_border);
     /* HEADER BOTTON ----------------------*/
-    --w_boton: 10vw;
-    --h_boton: 3vw;
+    --w_btn: 10vw;
+    --h_btn: 3vw;
     
     --space1: 6vw;
     --space2: 2vw;
@@ -69,7 +69,7 @@ html, body {
     height: 60vh;
     background-color: var(--color_white_80);
     border: 2px solid var(--color_primario_a);
-    border-radius: var(--r_boton);
+    border-radius: var(--r_btn);
     align-items: center ;
 }
 
@@ -91,12 +91,12 @@ footer {
    
 }
 .foter_left{
-    border-radius:var(--r_boton) 0  0 calc(var(--r_boton)*3);
+    border-radius:var(--r_btn) 0  0 calc(var(--r_btn)*3);
     background-color: var(--color_white_80);
 }
 
 .foter_rigth {
-    border-radius: 0 var(--r_boton)  var(--r_boton) 0;
+    border-radius: 0 var(--r_btn)  var(--r_btn) 0;
     background-color: var(--color_primario_a);
 }
 /* End Footer*/
@@ -110,7 +110,7 @@ html {
 
 
 /************************************** BOTONES ******************************************************/
-@keyframes animation_boton {
+@keyframes animation_btn {
     0%, 100%{
         transform: scale(1);
     }
@@ -119,39 +119,39 @@ html {
     }
 }
 .bonton_logo {
-    width: cal(100vw - (var(4*--w_boton) + var(--space1) + var(--space2)));
-    height: var(--h_boton);
+    width: cal(100vw - (var(4*--w_btn) + var(--space1) + var(--space2)));
+    height: var(--h_btn);
 }
 
-.boton_left, .boton_rigth, .boton_center, .boton_center1 {
+.btn_left, .btn_rigth, .btn_center, .btn_center1 {
     text-align: center;
-    width: var(--w_boton);
-    height: var(--h_boton);
+    width: var(--w_btn);
+    height: var(--h_btn);
     color: var(--color_white_100); /* Asegura que el texto sea visible */
     cursor: pointer; /* Cambia el puntero al pasar por el botón */
 
 }
-.boton_left, .boton_rigth, .boton_center1 {
+.btn_left, .btn_rigth, .btn_center1 {
     background-color: var(--color_primario_a);
 }
 
-.boton_center{
+.btn_center{
     background-color: var(--color_primario_b);
-    border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
-    animation: animation_boton 1s ease-in-out infinite;
+    border-radius: var(--r_btn) var(--r_btn) var(--r_btn) var(--r_btn);
+    animation: animation_btn 1s ease-in-out infinite;
 }
-.boton_left{
-    border-radius: var(--r_boton) 0 0 var(--r_boton);
+.btn_left{
+    border-radius: var(--r_btn) 0 0 var(--r_btn);
 }
-.boton_rigth {
-    border-radius: 0 var(--r_boton) var(--r_boton) 0;
+.btn_rigth {
+    border-radius: 0 var(--r_btn) var(--r_btn) 0;
 }
 
-.boton_left:hover, .boton_rigth:hover, .boton_center1:hover {
+.btn_left:hover, .btn_rigth:hover, .btn_center1:hover {
     background-color: var(--color_secundario_a);
     transform: scale(1.1);
 }
-.boton_center:hover{
+.btn_center:hover{
 background-color: var(--color_secundario_b);
 }
 .space1{
@@ -165,7 +165,7 @@ background-color: var(--color_secundario_b);
 /* PRIMERA PANTALLA ********************************************************************/
 
 .central_first_screem {
-    border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
+    border-radius: var(--r_btn) var(--r_btn) var(--r_btn) var(--r_btn);
     border: 2px solid var(--color_primario_a);
     width: calc(100vw - (var(--w_container_lateral)*2 ));
     background-color: var(--color_white_60);
@@ -173,7 +173,7 @@ background-color: var(--color_secundario_b);
 }
 
 .lateral_screem {
-    border-radius: var(--r_boton) var(--r_boton) var(--r_boton) var(--r_boton);
+    border-radius: var(--r_btn) var(--r_btn) var(--r_btn) var(--r_btn);
     border: 2px solid var(--color_primario_a);
     width: var(--w_container_lateral);
     background-color:var(--color_white_80);
@@ -265,7 +265,7 @@ input:valid, textarea:valid {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%); /* Ajuste exacto al centro */
-    border-radius: var(--r_boton); /* Bordes redondeados opcionales */
+    border-radius: var(--r_btn); /* Bordes redondeados opcionales */
     border: 2px solid var(--color_primario_a);
 }
 
@@ -305,7 +305,8 @@ h1 {
 
 @media screen and (max-width: 768px) {
     .imagen_header {
-        margin-left: -15%;
+        margin-left: -20%;
+        height: 5vh;
     }
     
 }
